@@ -25,8 +25,10 @@ In order to run Reinforce, you will require to have access to a MySQL server.
 You can install a MySQL server on local machine using this guide:
 https://dev.mysql.com/doc/mysql-getting-started/en/#mysql-getting-started-installing
 
+
 ################################################################################
 
-You can run FUSE or MC-EMMA with Reinforce by running according input files.
-To do it you need first to download and install FUSE (link)
-or MC-EMMA (link).
+To use Reinforce in FUSE or MC-EMMA you need first to download and install FUSE (link)
+or MC-EMMA (link). Then fill fields 'host', 'database', 'user', 'password' 
+to access your MySQL Server in the chosen input file. Then you can run the input file.
+
