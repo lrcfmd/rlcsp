@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 22 10:41:17 2020
+CSP variation of Reinforce algorithm designed to work with basin-hopping CSP codes
+on the step where the next action to change the trial structure is being selected
+@author: Elena Zamaraeva
+"""
 import numpy as np
 import math
 import statistics

@@ -1,4 +1,13 @@
-from fuse_reinforce_penalty import *
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 22 10:41:17 2020
+
+The input file to run fuse with RLCSP for Y2O3
+
+@author: Elena Zamaraeva
+"""
+from fuse_rl import *
 import sys
 import time
 

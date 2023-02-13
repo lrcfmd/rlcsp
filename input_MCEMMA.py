@@ -1,4 +1,13 @@
-from mcemma_reinforce.mc_emma import *
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 22 10:41:17 2020
+
+The input file to run MC-EMMA with RLCSP for YBa2Ca2Fe5O13
+
+@author: Elena Zamaraeva
+"""
+from mcemma_rl.mc_emma import *
 import numpy
 import sys
 """ Cubic structures """
@@ -136,10 +145,7 @@ lib = 'lib2.lib',
 A_Mods={'orthorhombic':AMods},
 B_Mods={'orthorhombic':BMods},
 charges={"O":-2,"Ca":2,"Fe":3,"Y":3,"Ba":2},
-# composition={"Y":1.0,"Ba":1.0,"Ca":2.0,"Fe":4.0,"O":10.5},
 composition={"Y":1.0,"Ba":2.0,"Ca":2.0,"Fe":5.0,"O":13},
-#composition={"Ca":1.0,"Fe":1.0,"O":2.5},
-#     test
 sl=[5,10],
 
 #mc run parameters

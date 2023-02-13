@@ -1,4 +1,13 @@
-from fuse_reinforce_penalty import *
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 22 10:41:17 2020
+
+The input file to run fuse with RLCSP for Y2TiO5
+
+@author: Elena Zamaraeva
+"""
+from fuse_rl import *
 import sys
 import time
 
@@ -48,9 +57,9 @@ run_fuse(composition=composition,search=search,rmax=rmax,
         search_gen=search_gen,max_atoms=max_atoms,imax_atoms=imax_atoms,ctype=ctype,
         kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel,
          params_db={'host': 'HOST',
-                                'database': 'DATABASE',
-                                'user': 'USERNAME',
-                                'password': '!PASSWORD'},
+                    'database': 'DATABASE',
+                    'user': 'USERNAME',
+                    'password': 'PASSWORD'},
          alpha=0.0005,
          reinforce_table='fuse_reinforce_Y2TiO5' + dir_num,
          theta_table='fuse_reinforce_Y2TiO5_theta' + dir_num,

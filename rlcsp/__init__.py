@@ -2,10 +2,10 @@ from distutils.version import LooseVersion
 
 import numpy as np
 
-from .reinforce import *
+from .rlcsp import *
 from .state import *
 
-__all__ = ['reinforce', 'state']
+__all__ = ['rlcsp.py', 'state']
 
 __version__ = '1.00'
 

@@ -16,19 +16,19 @@ dependencies all of which can be installed via pip:
 9) scipy
 10) heapq
 
-You can then install Reinforce by typing:
+You can then install RLCSP by typing:
 
 python3 setup.py install
 
 ################################################################################
 
-In order to run Reinforce, you will require to have access to a MySQL server.
+In order to run RLCSP, you will require to have access to a MySQL server.
 You can install a MySQL server on local machine using this guide:
 https://dev.mysql.com/doc/mysql-getting-started/en/#mysql-getting-started-installing
 
 ################################################################################
 
-To use Reinforce in FUSE or MC-EMMA you need first to download and install FUSE (link)
-or MC-EMMA (link). Then fill fields 'host', 'database', 'user', 'password' 
+To use RLCSP in FUSE or MC-EMMA you need first to download and install FUSE (https://github.com/lrcfmd/FUSE_RL.git)
+or MC-EMMA (https://github.com/lrcfmd/MC-EMMA-RL). Then fill fields 'host', 'database', 'user', 'password' 
 to access your MySQL Server in the chosen input file. Then you can run the input file.
 
