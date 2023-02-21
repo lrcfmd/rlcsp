@@ -1175,7 +1175,8 @@ class Reinforce:
                     host=self.params_db['host'],
                     user=self.params_db['user'],
                     password=self.params_db['password'],
-                    database='' if create_db else self.params_db['database']
+                    database='' if create_db else self.params_db['database'],
+                    auth_plugin='mysql_native_password'
                 )
                 try:
                     cur = conn_db.cursor(buffered=(result != 'none'))
