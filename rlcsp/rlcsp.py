@@ -100,7 +100,7 @@ class Reinforce:
         if 'reward_limit_last' not in self.reg_params:
             self.reg_params['reward_limit_last'] = False
         if 'smart_penalty' not in self.reg_params:
-            self.reg_params['smart_penatly'] = False
+            self.reg_params['smart_penalty'] = False
         self.free_term = self.reg_params['free_term']
         self.h_type = self.reg_params['h_type']
 
