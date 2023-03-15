@@ -3,17 +3,17 @@
 """
 Created on Thu Oct 22 10:41:17 2020
 
-The input file to run fuse with RLCSP for Sr4Ti3O10
+The input file to run fuse with RLCSP for Y2O3
 
 @author: Elena Zamaraeva
 """
-from fuse_rl import *
+from fuse104 import *
 import sys
 import time
 
 #### composition information
 #composition = {'Y':[2],'Ti':[2],'O':[7]} #composition in non-charged format
-composition = {'Sr':[4,+2],'Ti':[3,+4],'O':[10,-2]} #composition in ionic format
+composition = {'Y':[2,+3],'O':[3,-2]} #composition in ionic format
 
 #### set search routine 1 = BH, 2 = GA
 search = 1
@@ -29,8 +29,8 @@ iterations=2000 # number of structures to compute in this run
 restart=False # restart a previous run?
 initial_gen=100 # size of the initial population
 search_gen=1 # size of each generation in to be used by the search routine
-max_atoms=50 # global limit on the maximum number of atoms
-imax_atoms=50 # maximum number of atoms to be used in the initial population
+max_atoms=80 # global limit on the maximum number of atoms
+imax_atoms=80 # maximum number of atoms to be used in the initial population
 
 ### gulp inputs
 ctype='gulp' # flag to pass to ase inorder to use gulp as the energy minimiser
@@ -53,28 +53,10 @@ else:
     dir_num = '1'
 
 run_fuse(composition=composition,search=search,rmax=rmax,
-	iterations=iterations,restart=restart,initial_gen=initial_gen,
-	search_gen=search_gen,max_atoms=max_atoms,imax_atoms=imax_atoms,ctype=ctype,
-	kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel,
-	 params_db={'host': 'HOST',
-				'database': 'DATABASE',
-				'user': 'USERNAME',
-				'password': '!PASSWORD'},
-	 alpha=0.0005,
-	 reinforce_table='fuse_reinforce_Sr4Ti3O10' + dir_num,
-	 theta_table='fuse_reinforce_Sr4Ti3O10_theta' + dir_num,
-	 reinforce_id=dir_num,
-	 reg_params={'e_threshold': 0.8, 'beta': 1, 'free_term': 1, 
-	'h_type': 'linear', 'zero_reward_penalty': -3, 
-	'non_converge_penalty': -3,
-	'non_unique_penalty': -3,
-	'scale_reward': True,
-        'epsilon': 0.1,
-	'non_unique_reward': False,
-        'step_reward_limit': 5000,
-        'reward_limit_last': True,
-        'smart_penalty': True},
-	 target_energy=-29.984896
+        iterations=iterations,restart=restart,initial_gen=initial_gen,
+        search_gen=search_gen,max_atoms=max_atoms,imax_atoms=imax_atoms,ctype=ctype,
+        kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel,
+	 target_energy=-27.394619
 	 )
 
-sys.exit(i)
+sys.exit()
