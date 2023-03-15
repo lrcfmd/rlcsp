@@ -55,8 +55,6 @@ else:
 run_fuse(composition=composition,search=search,rmax=rmax,
 	iterations=iterations,restart=restart,initial_gen=initial_gen,
 	search_gen=search_gen,max_atoms=max_atoms,imax_atoms=imax_atoms,ctype=ctype,
-	kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel,
-	target_energy=-29.984896
-	 )
+	kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel)
 
 sys.exit()

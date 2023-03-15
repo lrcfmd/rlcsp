@@ -3,9 +3,9 @@
 """
 Created on Thu Oct 22 10:41:17 2020
 
-The input file to run fuse with RLCSP for Y2TiO5
+The input file to run fuse with the Original policy for Y2TiO5
 
-@author: Elena Zamaraeva
+@author: Chris Collins
 """
 from fuse104 import *
 import sys
@@ -55,7 +55,6 @@ else:
 run_fuse(composition=composition,search=search,rmax=rmax,
         iterations=iterations,restart=restart,initial_gen=initial_gen,
         search_gen=search_gen,max_atoms=max_atoms,imax_atoms=imax_atoms,ctype=ctype,
-        kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel,
-	    target_energy=-32.682202)
+        kwds=kwds,gulp_opts=gulp_opts,lib=lib,shel=shel)
 
 sys.exit()
