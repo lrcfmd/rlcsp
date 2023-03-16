@@ -56,7 +56,7 @@ the csp run you are about to complete. user and password should be set to the us
 
 ################################################################################
 
-Removeing mysql databases that you are finished with
+Removing mysql databases that you are finished with
 
 If you wish to remove databases from your machine, you can login to mysql from the command line:
 
