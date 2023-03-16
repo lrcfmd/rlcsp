@@ -54,7 +54,7 @@ to access your MySQL Server in the chosen input file. Then you can run the input
 
 ################################################################################
 
-The input files for each policy-composition pair tested in the paper "Reinforcement Learning in Cystal Structure Prediction" are located in the folders 'input_FUSE' and 'input_MCEMMA' and can be used to reproduce the results of the paper. The inpute files are named as 'input_\<CODE\>_\<policy\>_\<composition\>.py' where \<CODE\> is either FUSE or MCEMMA, \<policy\> is one of three policies (RLCSP, Original, Uniform), and <composition> is one of six compositions (Sr4Ti3O10, Y2TiO5, Y2Ti2O7, Sr2YO4, Y2O3, YBa2Ca2Fe5O13). 
+The input files for each policy-composition pair tested in the paper "Reinforcement Learning in Cystal Structure Prediction" are located in the folders 'input_FUSE' and 'input_MCEMMA' and can be used to reproduce the results of the paper. The inpute files are named as 'input_\<CODE\>\_\<policy\>\_\<composition\>.py' where \<CODE\> is either FUSE or MCEMMA, \<policy\> is one of three policies (RLCSP, Original, Uniform), and <composition> is one of six compositions (Sr4Ti3O10, Y2TiO5, Y2Ti2O7, Sr2YO4, Y2O3, YBa2Ca2Fe5O13). 
 To run FUSE with the Original or Uniform policies you need to install the corresponding version of FUSE; TODO:LINK for the Original policy or TODO:LINK for the Uniform policy.
 To run MC-EMMA with the Original or Uniform policies you need to install MC-EMMA from https://github.com/lrcfmd/MC-EMMA-stable .
 
