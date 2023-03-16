@@ -48,7 +48,7 @@ codes, and ‘mypassword’ is your chosen password for the database.
 
 ################################################################################
 
-To use RLCSP in FUSE or MC-EMMA you need first to download and install FUSE (https://github.com/lrcfmd/FUSE_RL.git)
+To use RLCSP in FUSE or MC-EMMA you need first to download and install FUSE (https://github.com/lrcfmd/FUSE_RL)
 or MC-EMMA (https://github.com/lrcfmd/MC-EMMA-RL). Then fill fields 'host', 'database', 'user', 'password' 
 to access your MySQL Server in the chosen input file. Then you can run the input file.
 To run on a local machine, host should be set to "localhost", database, is the name of the database to use to for
