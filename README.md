@@ -50,13 +50,17 @@ codes, and ‘mypassword’ is your chosen password for the database.
 
 To use RLCSP in FUSE or MC-EMMA you need first to download and install FUSE (https://github.com/lrcfmd/FUSE_RL)
 or MC-EMMA (https://github.com/lrcfmd/MC-EMMA-RL). Then fill fields 'host', 'database', 'user', 'password' 
-to access your MySQL Server in the chosen input file. Then you can run the input file.
-To run on a local machine, host should be set to "localhost", database, is the name of the database to use to for
-the csp run you are about to complete. user and password should be set to the username and password set above.
+to access your MySQL Server in the chosen input file. Then you can run the input file. 
 
 ################################################################################
 
-Removeing mysql databases that you are finished with
+The input files for each policy-composition pair tested in the paper "Reinforcement Learning in Cystal Structure Prediction" are located in the folders 'input_FUSE' and 'input_MCEMMA' and can be used to reproduce the results of the paper. The inpute files are named as 'input_\<CODE\>\_\<policy\>\_\<composition\>.py' where \<CODE\> is either FUSE or MCEMMA, \<policy\> is one of three policies (RLCSP, Original, Uniform), and \<composition\> is one of six compositions (Sr4Ti3O10, Y2TiO5, Y2Ti2O7, Sr2YO4, Y2O3, YBa2Ca2Fe5O13). 
+To run FUSE with the Original or Uniform policies you need to install the corresponding version of FUSE; TODO:LINK for the Original policy or TODO:LINK for the Uniform policy.
+To run MC-EMMA with the Original or Uniform policies you need to install MC-EMMA from https://github.com/lrcfmd/MC-EMMA-stable .
+
+################################################################################
+
+Removing mysql databases that you are finished with
 
 If you wish to remove databases from your machine, you can login to mysql from the command line:
 
