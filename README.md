@@ -1,3 +1,16 @@
+# Reinforcement Learning for Crystal Structure Prediction
+
+Crystal Structure Prediction (CSP) plays a crucial role in computational chemistry and materials design, being a powerful tool for the discovery of new materials with desirable properties. As the immense number of potential element combinations and their spatial arrangements present a significant challenge, approaches are being developed to explore the potential energy surface, generating trial structures and identifying those with the lowest energy. The efficiency of a crystal structure prediction algorithm is largely dependent on the decision-making process used to generate trial structures for further local optimization. There are various ways to approach the problem, ranging from generating structures randomly through brute force, to making various modifications to the already generated structures, or using a combination of both methods.
+
+Every CSP code has its own algorithm and parameterisation, which is characterised by the implemented decision-making process or policy used to generate trial structures. If the policy is stochastic it raises the question of how to distribute probabilities for different types of structure modification. This package allows the dynamic generation of an adaptive stochastic policy aimed to increase the chances to get the structure with lower energy. The policy does not require pre-training and is learned on-the-fly via the REINFORCE algorithm, the classical Reinforcement Learning algorithm.
+
+This package is used in [FUSE][fuse] and [MC-EMMA][mcemma] for the policy optimization and can be embedded into other CSP code.
+
+[fuse]: https://github.com/lrcfmd/FUSE_RL
+[mcemma]: https://github.com/lrcfmd/MC-EMMA-RL
+
+## Installation
+
 This has been tested on unix based systems.
 
 Requirements:
@@ -46,10 +59,10 @@ Where ‘myuser’ should be replaced with the username that you want to use run
 codes, and ‘mypassword’ is your chosen password for the database.
 
 
-################################################################################
+## Usage
 
 To use RLCSP in FUSE or MC-EMMA you need first to download and install FUSE (https://github.com/lrcfmd/FUSE_RL)
-or MC-EMMA (https://github.com/lrcfmd/MC-EMMA-RL). Then fill fields 'host', 'database', 'user', 'password' 
+or MC-EMMA (https://github.com/lrcfmd/MC-EMMA-RL). Then fill in fields 'host', 'database', 'user', 'password' 
 to access your MySQL Server in the chosen input file. Then you can run the input file. 
 
 ################################################################################
