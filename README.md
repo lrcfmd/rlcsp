@@ -32,8 +32,8 @@ NOTE: you will need to set a password for the root user when installing mysql.
 ################################################################################
 
 To run on a local machine, once mysql is installed as above you will need to set up a 
-local user for your install of mysql, using the root user accound created when mysql
-was install. From a command terminal type the following:
+local user for your install of mysql, using the root user account created when mysql
+was installed. From a command terminal type the following:
 
 sudo mysql -u root -p
 
@@ -54,7 +54,7 @@ to access your MySQL Server in the chosen input file. Then you can run the input
 
 ################################################################################
 
-The input files for each policy-composition pair tested in the paper "Reinforcement Learning in Cystal Structure Prediction" are located in the folders 'input_FUSE' and 'input_MCEMMA' and can be used to reproduce the results of the paper. The inpute files are named as 'input_\<CODE\>\_\<policy\>\_\<composition\>.py' where \<CODE\> is either FUSE or MCEMMA, \<policy\> is one of three policies (RLCSP, Original, Uniform), and \<composition\> is one of six compositions (Sr4Ti3O10, Y2TiO5, Y2Ti2O7, Sr2YO4, Y2O3, YBa2Ca2Fe5O13). 
+The input files for each policy-composition pair tested in the paper "Reinforcement Learning in Crystal Structure Prediction" are located in the folders 'input_FUSE' and 'input_MCEMMA' and can be used to reproduce the results of the paper. The input files are named as 'input_\<CODE\>\_\<policy\>\_\<composition\>.py' where \<CODE\> is either FUSE or MCEMMA, \<policy\> is one of three policies (RLCSP, Original, Uniform), and \<composition\> is one of six compositions (Sr4Ti3O10, Y2TiO5, Y2Ti2O7, Sr2YO4, Y2O3, YBa2Ca2Fe5O13). 
 To run FUSE with the Original or Uniform policies you need to install the corresponding version of FUSE (https://github.com/lrcfmd/FUSE-stable); please, use FUSE 1.04 (folder '104') for the Original policy or FUSE 1.06 (folder '106') for the Uniform policy.
 To run MC-EMMA with the Original or Uniform policies you need to install MC-EMMA from https://github.com/lrcfmd/MC-EMMA-stable .
 
@@ -66,7 +66,7 @@ If you wish to remove databases from your machine, you can login to mysql from t
 
 mysql -u 'myuser' -p
 
-and then use the following command to remove a data base as set with "database" above:
+and then use the following command to remove a database as set with "database" above:
 
 DROP DATABASE "database";
 
